@@ -3,7 +3,9 @@ Programmierprojekt: Schach
 Abgabeschluss ist der 11.07.2025 um 22:00 Uhr
 
 Name:Jan Felix Fastenrath
-Matrikelnummer:2860620 test asd
+Matrikelnummer:2860620
 
 Name:Tom Heinzemann
 Matrikelnummer:2937854
+
+jetzt aber
