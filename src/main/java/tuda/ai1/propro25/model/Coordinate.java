@@ -73,5 +73,5 @@ public final class Coordinate {
 	public int hashCode() {
 		return Objects.hash(file, rank);
 	}
-
+	
 }
