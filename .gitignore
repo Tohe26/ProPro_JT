@@ -1,0 +1,11 @@
+/.gradle/
+# macOS
+.DS_Store
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+target/
+# Java-Klassen
+*.class
