@@ -21,6 +21,7 @@ public final class Coordinate {
 		this.file = file;
 		this.rank = rank;
 	}
+	
 	public int getFile() {
 		return file;
 	}
@@ -28,12 +29,35 @@ public final class Coordinate {
 	public int getRank() {
 		return rank;
 	}
-
-	// TODO: Aufgabe 1.2
-
-	// TODO: Aufgabe 1.3
-
-	// TODO: Aufgabe 1.4
+	
+	/**
+	 * Methode zur Umwandlung der numerischen Spaltenwerte in algebraische (Schach)Notationen
+	 * @return die zusammengesetzte algebraische (Schach)Notation
+	 */
+	public String getAlgebraicNotation() {
+		// String-Array für die Spaltenbuchstaben
+		String[] spaltenBuchstaben = {"a", "b", "c", "d", "e", "f", "g", "h"};
+		String buchstabe = spaltenBuchstaben[file];
+		// Zeilenzahl(rank) + 1, da die Zahlen auf dem Schachbrett bei 1 beginnen
+		int zahl = rank + 1;
+		return buchstabe + zahl;
+	}
+	
+	/**
+	 * Methode um die Gültigkeit der Koordinaten zu prüfen
+	 * @return true, falls die Koordinate auf dem Brett liegt / false, falls nicht
+	 */
+	public boolean isOnBoard() {
+		return file >= 0 && file < Board.BOARD_SIZE && rank >= 0 && rank < Board.BOARD_SIZE;
+	}
+	
+	/**
+	 * Methode überschreibt toString, sodass die Koordinate in Form der Schachnotation zurückgegeben wird
+	 * @return Notations-String 
+	 */
+	public String toString() {
+		return getAlgebraicNotation();
+	}
 
 	@Override
 	public boolean equals(Object obj) {
